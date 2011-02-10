@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jboss.arquillian.ajocado</groupId>
 	<artifactId>arquillian-ajocado-parent</artifactId>
-	<version>1.5.3-SNAPSHOT</version>
+	<version>1.5.3-rhdc</version>
 	<packaging>pom</packaging>
 	<name>Ajocado Parent</name>
 	<description>Testing Ajax with flavour of sexy type-safe API</description>
@@ -43,6 +43,9 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <jboss.releases.repo.url>file:///tmp/rdhc-repository</jboss.releases.repo.url>
+    <jboss.snapshots.repo.url>file:///tmp/rdhc-repository</jboss.snapshots.repo.url>
 	</properties>
 
 	<build>
@@ -103,4 +106,49 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+   
+   <!-- Maven 2 Repositories -->
+  <repositories>
+    <repository>
+      <id>jboss-public-repository-group</id>
+      <name>JBoss Public Repository Group</name>
+      <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+      <layout>default</layout>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>jboss-deprecated</id>
+      <name>JBoss Deprecated</name>
+      <url>https://repository.jboss.org/nexus/content/repositories/deprecated/</url>
+      <layout>default</layout>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>jboss-public-repository-group</id>
+      <name>JBoss Public Repository Group</name>
+      <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
+   
 </project>

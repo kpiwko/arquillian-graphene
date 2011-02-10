@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.jboss.arquillian.ajocado</groupId>
 		<artifactId>arquillian-ajocado-parent</artifactId>
-		<version>1.5.3-SNAPSHOT</version>
+		<version>1.5.3-rhdc</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
@@ -19,7 +19,7 @@
 		<dependency>
 			<groupId>org.jboss.arquillian.ajocado</groupId>
 			<artifactId>arquillian-ajocado-api</artifactId>
-			<version>1.5.3-SNAPSHOT</version>
+			<version>1.5.3-rhdc</version>
 		</dependency>
 		<dependency>
 			<groupId>org.seleniumhq.selenium.client-drivers</groupId>
@@ -36,7 +36,7 @@
 		<dependency>
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
-		</dependency>
+		</dependency> 
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>

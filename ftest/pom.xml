@@ -4,30 +4,30 @@
 	<parent>
 		<artifactId>arquillian-ajocado-parent</artifactId>
 		<groupId>org.jboss.arquillian.ajocado</groupId>
-		<version>1.5.3-SNAPSHOT</version>
+		<version>1.5.3-rhdc</version>
 	</parent>
 	<groupId>org.jboss.arquillian.ajocado</groupId>
 	<artifactId>arquillian-ajocado-ftest</artifactId>
-	<version>1.5.3-SNAPSHOT</version>
+	<version>1.5.3-rhdc</version>
 	<name>Ajocado Functional Test</name>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.jboss.arquillian.ajocado</groupId>
 			<artifactId>arquillian-ajocado-api</artifactId>
-			<version>1.5.3-SNAPSHOT</version>
+			<version>1.5.3-rhdc</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.jboss.arquillian.ajocado</groupId>
 			<artifactId>arquillian-ajocado-impl</artifactId>
-			<version>1.5.3-SNAPSHOT</version>
+			<version>1.5.3-rhdc</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.jboss.arquillian.ajocado</groupId>
 			<artifactId>arquillian-ajocado-testng</artifactId>
-			<version>1.5.3-SNAPSHOT</version>
+			<version>1.5.3-rhdc</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
